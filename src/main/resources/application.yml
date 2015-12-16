@@ -1,0 +1,8 @@
+spring.application.name: atlas
+
+eureka.client:
+  serviceUrl.defaultZone: http://${EC2_REGION:us-west-1}.discovery${NETFLIX_ENVIRONMENT:test}.netflix.net:7001/discovery/v2/
+  register-with-eureka: false
+  fetch-registry: false
+
+netflix.atlas.uri: http://atlas/api/v1/publish/
